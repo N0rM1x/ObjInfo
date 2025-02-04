@@ -1,0 +1,14 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "n0rm1x.objinfo",
+	"name": "ObjInfo",
+	"version": "v1.0.0",
+	"developer": "N0rM1x",
+	"description": ""
+}
