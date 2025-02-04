@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA3F9472-B9AE-38A6-8BD5-E8554EB62C5D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ObjInfo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geode-Mods\ObjInfo\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ObjInfo.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">n0rm1x.objinfo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geode-Mods\ObjInfo\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ObjInfo.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">n0rm1x.objinfo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geode-Mods\ObjInfo\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ObjInfo.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">n0rm1x.objinfo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geode-Mods\ObjInfo\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ObjInfo.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">n0rm1x.objinfo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geode-Mods/ObjInfo/build/_deps/fmt-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/tuliphook-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/result-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/json-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GEODE_MOD_ID="n0rm1x.objinfo";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING="2.2074";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR="Debug";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GEODE_MOD_ID=\"n0rm1x.objinfo\";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING=\"2.2074\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR=\"Debug\";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcocos2d.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libExtensions.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\glew32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\fmod.lib;opengl32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\crypto.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp3.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2_crypto_boringssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcurl.lib;delayimp.lib;ws2_32.lib;bindings\Debug\GeodeBindings.lib;_deps\fmt-build\Debug\fmtd.lib;C:\Users\ezvac\Documents\Geode\bin\4.2.0\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/ezvac/Documents/Geode/loader/include/link;C:/Users/ezvac/Documents/Geode/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geode-Mods/ObjInfo/build/Debug/n0rm1x.objinfo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geode-Mods/ObjInfo/build/Debug/n0rm1x.objinfo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geode-Mods/ObjInfo/build/_deps/fmt-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/tuliphook-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/result-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/json-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="n0rm1x.objinfo";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING="2.2074";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR="Release";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"n0rm1x.objinfo\";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING=\"2.2074\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR=\"Release\";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcocos2d.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libExtensions.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\glew32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\fmod.lib;opengl32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\crypto.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp3.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2_crypto_boringssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcurl.lib;delayimp.lib;ws2_32.lib;bindings\Release\GeodeBindings.lib;_deps\fmt-build\Release\fmt.lib;C:\Users\ezvac\Documents\Geode\bin\4.2.0\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/ezvac/Documents/Geode/loader/include/link;C:/Users/ezvac/Documents/Geode/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geode-Mods/ObjInfo/build/Release/n0rm1x.objinfo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geode-Mods/ObjInfo/build/Release/n0rm1x.objinfo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geode-Mods/ObjInfo/build/_deps/fmt-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/tuliphook-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/result-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/json-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="n0rm1x.objinfo";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING="2.2074";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR="MinSizeRel";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"n0rm1x.objinfo\";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING=\"2.2074\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR=\"MinSizeRel\";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcocos2d.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libExtensions.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\glew32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\fmod.lib;opengl32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\crypto.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp3.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2_crypto_boringssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcurl.lib;delayimp.lib;ws2_32.lib;bindings\MinSizeRel\GeodeBindings.lib;_deps\fmt-build\MinSizeRel\fmt.lib;C:\Users\ezvac\Documents\Geode\bin\4.2.0\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/ezvac/Documents/Geode/loader/include/link;C:/Users/ezvac/Documents/Geode/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geode-Mods/ObjInfo/build/MinSizeRel/n0rm1x.objinfo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geode-Mods/ObjInfo/build/MinSizeRel/n0rm1x.objinfo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geode-Mods/ObjInfo/build/_deps/fmt-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/tuliphook-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/result-src/include" /external:I "C:/Geode-Mods/ObjInfo/build/_deps/json-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="n0rm1x.objinfo";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING="2.2074";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR="RelWithDebInfo";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"n0rm1x.objinfo\";PROJECT_NAME=ObjInfo;NOMINMAX;GEODE_GD_VERSION=2.2074;GEODE_COMP_GD_VERSION=22074;GEODE_GD_VERSION_STRING=\"2.2074\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;CMAKE_INTDIR=\"RelWithDebInfo\";ObjInfo_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geode-Mods\ObjInfo\build\bindings\bindings;C:\Geode-Mods\ObjInfo\build\_deps\bindings-src\bindings\include;C:\Users\ezvac\Documents\Geode\loader\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\include;C:\Users\ezvac\Documents\Geode\loader\include\Geode\cocos\extensions;C:\Users\ezvac\Documents\Geode\loader\include\Geode\fmod;C:\Geode-Mods\ObjInfo\build\_deps\fmt-src\include;C:\Geode-Mods\ObjInfo\build\_deps\tuliphook-src\include;C:\Geode-Mods\ObjInfo\build\_deps\result-src\include;C:\Geode-Mods\ObjInfo\build\_deps\json-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcocos2d.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libExtensions.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\glew32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\fmod.lib;opengl32.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\crypto.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\nghttp3.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\ngtcp2_crypto_boringssl.lib;C:\Users\ezvac\Documents\Geode\loader\include\link\win64\libcurl.lib;delayimp.lib;ws2_32.lib;bindings\RelWithDebInfo\GeodeBindings.lib;_deps\fmt-build\RelWithDebInfo\fmt.lib;C:\Users\ezvac\Documents\Geode\bin\4.2.0\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/ezvac/Documents/Geode/loader/include/link;C:/Users/ezvac/Documents/Geode/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geode-Mods/ObjInfo/build/RelWithDebInfo/n0rm1x.objinfo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geode-Mods/ObjInfo/build/RelWithDebInfo/n0rm1x.objinfo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Geode-Mods\ObjInfo\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Geode-Mods/ObjInfo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Geode-Mods/ObjInfo -BC:/Geode-Mods/ObjInfo/build --check-stamp-file C:/Geode-Mods/ObjInfo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCXXCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeRCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeSystem.cmake;C:\Geode-Mods\ObjInfo\mod.json;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Geode-Mods/ObjInfo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Geode-Mods/ObjInfo -BC:/Geode-Mods/ObjInfo/build --check-stamp-file C:/Geode-Mods/ObjInfo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCXXCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeRCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeSystem.cmake;C:\Geode-Mods\ObjInfo\mod.json;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Geode-Mods/ObjInfo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Geode-Mods/ObjInfo -BC:/Geode-Mods/ObjInfo/build --check-stamp-file C:/Geode-Mods/ObjInfo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCXXCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeRCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeSystem.cmake;C:\Geode-Mods\ObjInfo\mod.json;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Geode-Mods/ObjInfo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Geode-Mods/ObjInfo -BC:/Geode-Mods/ObjInfo/build --check-stamp-file C:/Geode-Mods/ObjInfo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeCXXCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeRCCompiler.cmake;C:\Geode-Mods\ObjInfo\build\CMakeFiles\3.30.5\CMakeSystem.cmake;C:\Geode-Mods\ObjInfo\mod.json;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geode-Mods\ObjInfo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Geode-Mods\ObjInfo\build\CMakeFiles\ObjInfo.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/ObjInfo.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\Geode-Mods\ObjInfo\src\ModMain.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Geode-Mods\ObjInfo\src\ModPlayLayer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Geode-Mods\ObjInfo\src\ModPlayLayer.h" />
+    <ClInclude Include="C:\Geode-Mods\ObjInfo\build\CMakeFiles\ObjInfo.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Geode-Mods\ObjInfo\build\CMakeFiles\ObjInfo.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\Geode-Mods\ObjInfo\build\CMakeFiles\ObjInfo.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="C:\Geode-Mods\ObjInfo\build\CMakeFiles\ObjInfo.dir\RelWithDebInfo\cmake_pch.hxx" />
+    <ClCompile Include="C:\Users\ezvac\Documents\Geode\entry.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Geode-Mods/ObjInfo/build/CMakeFiles/ObjInfo.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Geode-Mods\ObjInfo\build\ZERO_CHECK.vcxproj">
+      <Project>{C307B107-B278-3664-9FD1-FBAFC47D67BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Geode-Mods\ObjInfo\build\bindings\GeodeBindings.vcxproj">
+      <Project>{D0EF838D-3A25-314A-AAF2-AE308FF2E82B}</Project>
+      <Name>GeodeBindings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Geode-Mods\ObjInfo\build\_deps\fmt-build\fmt.vcxproj">
+      <Project>{54D579EC-5C98-35E9-91F1-DB344D0DABA5}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

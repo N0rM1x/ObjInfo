@@ -1,0 +1,110 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "n0rm1x.objinfo",
+	"name": "ObjInfo",
+	"version": "v1.0.0",
+	"developer": "N0rM1x",
+	"description": "",
+	"settings": {
+		"settings-main-title": {
+			"type": "title",
+			"name": "ObjInfo Settings"
+		},
+		"total-opacity": {
+			"name": "'Total objects' overlay opacity",
+			"description": "Opacity of total object's counter overlay",
+			"type": "int",
+			"default": 127,
+			"min": 0,
+			"max": 255,
+			"control": {
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"total-size": {
+			"name": "'Total objects' overlay size",
+			"description": "Size of total object's counter overlay",
+			"type": "int",
+			"default": 4,
+			"min": 1,
+			"max": 15,
+			"control": {
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"total-delta-pos": {
+			"name": "'Total objects' overlay offset",
+			"description": "Total objects overlay offset by strokes",
+			"type": "int",
+			"default": 1,
+			"min": 0,
+			"max": 100,
+			"controls": {
+				"slider": false,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"arrow-step": 1
+			}
+		},
+		"active-opacity": {
+			"name": "'Active objects' overlay opacity",
+			"description": "Opacity of active object's counter overlay",
+			"type": "int",
+			"default": 127,
+			"min": 0,
+			"max": 255,
+			"control": {
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-size": {
+			"name": "'Active objects' overlay size",
+			"description": "Size of active object's counter overlay",
+			"type": "int",
+			"default": 4,
+			"min": 1,
+			"max": 15,
+			"control": {
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-delta-pos": {
+			"name": "'Active objects' overlay offset",
+			"description": "Active objects overlay offset by strokes",
+			"type": "int",
+			"default": 2,
+			"min": 0,
+			"max": 100,
+			"controls": {
+				"slider": false,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"arrow-step": 1
+			}
+		}
+	}
+}
