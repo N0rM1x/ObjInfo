@@ -7,8 +7,10 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 project(ObjInfo VERSION 1.0.0)
 
 add_library(${PROJECT_NAME} SHARED
-    src/main.cpp
-    # Add any extra C++ source files here
+        src/ModMain.cpp
+        src/ModPlayLayer.cpp
+        src/ModPlayLayer.h
+        # Add any extra C++ source files here
 )
 
 if (NOT DEFINED ENV{GEODE_SDK})
