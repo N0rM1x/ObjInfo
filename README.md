@@ -8,7 +8,8 @@ The mod were made using Geode SDK and CLion for C++.
 I recommend heading over to [the getting started section on Geode docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do with it.
 
 ## Build instructions
-For more info, see [Geode docs](https://docs.geode-sdk.org/getting-started/create-mod#build)\n
+For more info, see [Geode docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
+
 Just open CMD, PowerShell or your terminal in mod`s directory and run this command:
 ```sh
 # Assuming you have the Geode CLI set up already
