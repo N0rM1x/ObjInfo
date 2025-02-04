@@ -10,7 +10,9 @@ I recommend heading over to [the getting started section on Geode docs](https://
 ## Build instructions
 For more info, see [Geode docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
 
-Just open CMD, PowerShell or your terminal in mod`s directory and run this command:
+This mod has NO INCLUDED build folder cozof its size, you could just drop your newly created mod's build folder into project's directory.
+
+Than, just open CMD, PowerShell or your terminal in mod`s directory and run this command:
 ```sh
 # Assuming you have the Geode CLI set up already
 geode build
