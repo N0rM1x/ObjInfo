@@ -4,13 +4,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(ObjInfo VERSION 1.0.0)
+project(ObjInfo VERSION 1.0.2)
 
 add_library(${PROJECT_NAME} SHARED
         src/ModMain.cpp
         src/ModPlayLayer.cpp
         src/ModPlayLayer.h
-        # Add any extra C++ source files here
 )
 
 if (NOT DEFINED ENV{GEODE_SDK})

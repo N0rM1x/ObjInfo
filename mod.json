@@ -8,45 +8,47 @@
 	},
 	"id": "n0rm1x.objinfo",
 	"name": "ObjInfo",
-	"version": "v1.0.0",
+	"version": "v1.0.2",
 	"developer": "N0rM1x",
 	"description": "",
 	"settings": {
-		"settings-main-title": {
+
+
+		"total-objects-settings-title": {
 			"type": "title",
-			"name": "ObjInfo Settings"
+			"name": "'Total objects' Settings"
 		},
-		"total-opacity": {
+		"total-objects-opacity": {
 			"name": "'Total objects' overlay opacity",
-			"description": "Opacity of total object's counter overlay",
+			"description": "Opacity of total objects counter overlay",
 			"type": "int",
 			"default": 127,
 			"min": 0,
 			"max": 255,
 			"control": {
 				"slider": true,
-				"arrows": false,
+				"arrows": true,
 				"big-arrows": false,
 				"input" : false,
 				"slider-step": 1
 			}
 		},
-		"total-size": {
+		"total-objects-size": {
 			"name": "'Total objects' overlay size",
-			"description": "Size of total object's counter overlay",
+			"description": "Size of total objects counter overlay",
 			"type": "int",
 			"default": 4,
 			"min": 1,
 			"max": 15,
 			"control": {
 				"slider": true,
-				"arrows": false,
+				"arrows": true,
 				"big-arrows": false,
 				"input" : false,
 				"slider-step": 1
 			}
 		},
-		"total-delta-pos": {
+		"total-objects-delta-pos": {
 			"name": "'Total objects' overlay offset",
 			"description": "Total objects overlay offset by strokes",
 			"type": "int",
@@ -61,41 +63,147 @@
 				"arrow-step": 1
 			}
 		},
-		"active-opacity": {
-			"name": "'Active objects' overlay opacity",
-			"description": "Opacity of active object's counter overlay",
+		"total-triggers-settings-title": {
+			"type": "title",
+			"name": "'Total Triggers' Settings"
+		},
+		"total-triggers-opacity": {
+			"name": "'Total Triggers' overlay opacity",
+			"description": "Opacity of total triggers counter overlay",
 			"type": "int",
 			"default": 127,
 			"min": 0,
 			"max": 255,
 			"control": {
 				"slider": true,
-				"arrows": false,
+				"arrows": true,
 				"big-arrows": false,
 				"input" : false,
 				"slider-step": 1
 			}
 		},
-		"active-size": {
-			"name": "'Active objects' overlay size",
-			"description": "Size of active object's counter overlay",
+		"total-triggers-size": {
+			"name": "'Total Triggers' overlay size",
+			"description": "Size of total triggers counter overlay",
 			"type": "int",
 			"default": 4,
 			"min": 1,
 			"max": 15,
 			"control": {
 				"slider": true,
-				"arrows": false,
+				"arrows": true,
 				"big-arrows": false,
 				"input" : false,
 				"slider-step": 1
 			}
 		},
-		"active-delta-pos": {
+		"total-triggers-delta-pos": {
+			"name": "'Total Triggers' overlay offset",
+			"description": "Total Triggers overlay offset by strokes",
+			"type": "int",
+			"default": 2,
+			"min": 0,
+			"max": 100,
+			"controls": {
+				"slider": false,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"arrow-step": 1
+			}
+		},
+
+
+		"active-objects-settings-title": {
+			"type": "title",
+			"name": "'Active objects' Settings"
+		},
+		"active-objects-opacity": {
+			"name": "'Active objects' overlay opacity",
+			"description": "Opacity of active objects counter overlay",
+			"type": "int",
+			"default": 127,
+			"min": 0,
+			"max": 255,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-objects-size": {
+			"name": "'Active objects' overlay size",
+			"description": "Size of active objects counter overlay",
+			"type": "int",
+			"default": 4,
+			"min": 1,
+			"max": 15,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-objects-delta-pos": {
 			"name": "'Active objects' overlay offset",
 			"description": "Active objects overlay offset by strokes",
 			"type": "int",
-			"default": 2,
+			"default": 4,
+			"min": 0,
+			"max": 100,
+			"controls": {
+				"slider": false,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"arrow-step": 1
+			}
+		},
+
+
+		"active-particles-settings-title": {
+			"type": "title",
+			"name": "'Active particles' Settings"
+		},
+		"active-particles-opacity": {
+			"name": "'Active particles' overlay opacity",
+			"description": "Opacity of active particles counter overlay",
+			"type": "int",
+			"default": 127,
+			"min": 0,
+			"max": 255,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-particles-size": {
+			"name": "'Active particles' overlay size",
+			"description": "Size of active particles counter overlay",
+			"type": "int",
+			"default": 4,
+			"min": 1,
+			"max": 15,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": false,
+				"input" : false,
+				"slider-step": 1
+			}
+		},
+		"active-particles-delta-pos": {
+			"name": "'Active particles' overlay offset",
+			"description": "Active particles overlay offset by strokes",
+			"type": "int",
+			"default": 5,
 			"min": 0,
 			"max": 100,
 			"controls": {
