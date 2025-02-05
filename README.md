@@ -3,7 +3,18 @@ The mod were made using Geode SDK and CLion for C++.
 
 <img src="logo.png" width="150" alt="ObjInfo logo" />
 
+## For what
+This mod was made mostly for creators, it provides useful information like:
+- Total level`s objects count, shows you how much objects in total level has 
+- Total level`s triggers count, shows you how much triggers level has
+- Active objects, shows you how much objects being rendered at the time
+- Active particles, shows you how much single particles being rendered at the time
 
+And all that being displayed while you playing, directly on the level`s overlay
+
+Also, you could manage some overlay's settings, like parameter's opacity, font size for it or y-position in overlay. All that in mod's Settings.
+
+# Source code and build
 ## Getting started
 I recommend heading over to [the getting started section on Geode docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do with it.
 
