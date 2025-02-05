@@ -32,6 +32,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Cache CPM packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cpm-cache
+          key: cpm-${{ runner.os }}-v1-${{ hashFiles('**/CMakeLists.txt') }}
+          restore-keys: |
+            cpm-${{ runner.os }}-v1-
+          fail-on-cache-miss: false
+
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
