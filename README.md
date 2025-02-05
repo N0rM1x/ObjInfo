@@ -29,6 +29,8 @@ Just open CMD, PowerShell or your terminal in mod`s directory and run this comma
 geode build
 ```
 
+**WARNING:** Geode SDK on MacOS doesn't support some stuff, which I'm using. KEEP IN MIND, IT WILL NOT BUILD. But I guess, the MOD itself will still work on MacOS.. Sorry for inconvenience...
+
 # Resources
 * [Geode SDK Documentation](https://docs.geode-sdk.org/)
 * [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
